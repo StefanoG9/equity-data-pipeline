@@ -1,0 +1,32 @@
+# Parametri delle fonti dati. Per ora solo "prices" (yfinance) è attivo:
+# è il primo modulo di ingestion che scriviamo e testiamo.
+# Le altre fonti (fondamentali, news, macro) verranno aggiunte con lo stesso schema
+# man mano che scriviamo i rispettivi moduli.
+
+prices:
+  fonte_primaria: yfinance
+  refresh: daily          # una volta al giorno dopo la chiusura del mercato
+  rate_limit: null        # nessun limite ufficiale noto
+  fallback: null          # da aggiungere: finnhub o alpha_vantage
+
+fundamentals:
+  fonte_primaria: alpha_vantage
+  refresh: weekly
+  rate_limit:
+    per_minuto: 5
+    per_giorno: 25
+  fallback: finnhub
+
+news:
+  fonte_primaria: newsapi
+  refresh: daily
+  rate_limit:
+    per_giorno: 100
+  fallback: finnhub
+
+macro:
+  fonte_primaria: fred
+  refresh: weekly
+  rate_limit:
+    per_minuto: 120
+  fallback: null

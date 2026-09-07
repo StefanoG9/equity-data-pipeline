@@ -1,0 +1,55 @@
+# Universo iniziale di prova per la Fase 1.
+# Piccolo di proposito (10 titoli, settori diversi) per validare la pipeline
+# prima di scalare a un universo più ampio.
+
+tickers:
+  - ticker: AAPL
+    nome: Apple Inc
+    settore: Technology
+    borsa: NASDAQ
+    valuta: USD
+  - ticker: MSFT
+    nome: Microsoft Corp
+    settore: Technology
+    borsa: NASDAQ
+    valuta: USD
+  - ticker: GOOGL
+    nome: Alphabet Inc
+    settore: Communication Services
+    borsa: NASDAQ
+    valuta: USD
+  - ticker: AMZN
+    nome: Amazon.com Inc
+    settore: Consumer Discretionary
+    borsa: NASDAQ
+    valuta: USD
+  - ticker: NVDA
+    nome: NVIDIA Corp
+    settore: Technology
+    borsa: NASDAQ
+    valuta: USD
+  - ticker: JPM
+    nome: JPMorgan Chase & Co
+    settore: Financials
+    borsa: NYSE
+    valuta: USD
+  - ticker: JNJ
+    nome: Johnson & Johnson
+    settore: Health Care
+    borsa: NYSE
+    valuta: USD
+  - ticker: PG
+    nome: Procter & Gamble
+    settore: Consumer Staples
+    borsa: NYSE
+    valuta: USD
+  - ticker: KO
+    nome: Coca-Cola Co
+    settore: Consumer Staples
+    borsa: NYSE
+    valuta: USD
+  - ticker: XOM
+    nome: Exxon Mobil Corp
+    settore: Energy
+    borsa: NYSE
+    valuta: USD
